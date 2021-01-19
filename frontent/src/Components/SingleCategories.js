@@ -10,7 +10,7 @@ const {person} = useParams ();
 console.log(person)
 
 
-const getsinglemovie = movies.filter (el => el.fields.person === person);
+const getsinglemovie = movies.filter (el => el.person === person);
 
 console.log(getsinglemovie)
 

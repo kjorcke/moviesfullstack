@@ -10,7 +10,7 @@ function SingleMovie({movies}) {
     
 
 
-const getsinglemovie = movies.filter (el => el.fields.numid === id);
+const getsinglemovie = movies.filter (el => el.numid === id);
 
 console.log(getsinglemovie)
 

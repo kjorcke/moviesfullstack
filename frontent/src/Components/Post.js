@@ -8,19 +8,18 @@ function Post({item}) {
     <div className="postcontainer"> 
         <div className="post">
             <div className="trailercontainer"> 
-                <iframe title="elf" src={item.fields.trailer} width="560" height="315"></iframe>
+                <iframe title="elf" src={item.trailer} width="560" height="315"></iframe>
             </div>
             <div className="moviedetails">
                 <div className="titlecontainer">
-                    <div className="movieTitle">{item.fields.name}</div>
-                    <div className="movieYear">({item.fields.year})</div>
+                    <div className="movieTitle">{item.name}</div>
+                    <div className="movieYear">({item.year})</div>
                 </div>
-                <div>{item.fields.description}</div>
-                <div>Rating: {item.fields.rating}</div>
-                <div>Director: {item.fields.director}</div>
-                <div>Stars: {item.fields.stars}</div>   
+                <div>{item.description}</div>
+                <div>Rating: {item.rating}</div>
+                <div>Director: {item.director}</div>
+                <div>Stars: {item.stars}</div>   
             </div>  
-            {/* <img  alt="movieimage"/> */}
         </div>
        
     </div>
