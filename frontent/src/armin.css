@@ -1,0 +1,139 @@
+/*NavBar*/
+
+.navbar {
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(0, 0, 0);
+}
+
+.inner-container {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+ul {
+	font-size: 1.7rem;
+	list-style: none;
+}
+
+.navbar-link {
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.2s ease-out;
+}
+
+.navbar-link:hover {
+	font-size: 2rem;
+}
+
+.lightbox {
+	width: 540px;
+	height: 150px;
+}
+
+.letter-container {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(255, 255, 255);
+	font-size: 100px;
+	box-shadow: 5px 5px 100px rgb(231, 218, 100);
+}
+
+.letter {
+	display: flex;
+	justify-content: center;
+	border: solid 3px #000;
+	width: 90px;
+	filter: drop-shadow(5px 5px 5px rgb(173, 163, 66));
+	color: #000;
+}
+
+/*Categories*/
+.categories-favorite {
+	font-size: 5rem;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	color: rgb(231, 218, 100);
+	text-shadow: 5px 5px 100px rgb(0, 0, 0);
+}
+
+.singlecategory-link {
+	display: flex;
+	justify-content: space-between;
+}
+
+.singlecategory-link img {
+	width: 350px;
+	height: 450px;
+}
+
+.categories-all {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	font-size: 5rem;
+	color: rgb(231, 218, 100);
+}
+
+.grid-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.category-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
+}
+
+.grid-image {
+	width: 350px;
+	height: 450px;
+	border: 2px solid rgb(173, 163, 66);
+}
+
+.singlecategory-link .hpcontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: calc(100vh - 200px);
+}
+
+.singlecategory-link .image-container {
+	position: relative;
+	width: 350px;
+	/* margin-top: 50px; */
+}
+
+.singlecategory-link .image-container .image {
+	width: 100%;
+	height: 100%;
+}
+
+.singlecategory-link .image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.singlecategory-link .text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	color: rgb(231, 218, 100);
+	font-size: 5rem;
+	text-align: center;
+}
+
+.image-container:hover .text {
+	opacity: 1;
+}

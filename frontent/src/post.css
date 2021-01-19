@@ -1,0 +1,41 @@
+
+.postcontainer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+   
+}
+
+.trailercontainer {
+    margin-right: 50px;
+    
+}    
+
+.moviedetails {
+    /* box-shadow: 5px 5px 100px rgb(231, 218, 100); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.titlecontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.movieTitle {
+    font-size: 45px;
+    color: rgb(231, 218, 100);
+}
+
+.movieYear {
+    font-size: 45px;
+    margin-left: 10px;
+}
+
