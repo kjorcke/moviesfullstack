@@ -25,7 +25,7 @@ function App() {
         setIsLoading(false);
         return res.json();
       })
-      .then((data) => setMovies(data))
+      .then((json) => setMovies(json.data))
       .catch((err) => setError(true));
   };
 

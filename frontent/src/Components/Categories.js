@@ -40,7 +40,7 @@ function Categories({movies}) {
             <div className="grid-container">
                 <h2 className='categories-all'>All movies</h2>
                 <div className='category-grid'>
-                    {movies.map((item, index) => (<NavLink to={`/singlemovie/${item.numid}`}><img className='grid-image' key={index} src={item.url} alt="movies"/></NavLink>))}
+                    {movies.map((item, index) => (<NavLink to={`/singlemovie/${item.numid}`}><img className='grid-image' key={index} src={item.image} alt="movies"/></NavLink>))}
                 </div>
             </div>
         </div>
